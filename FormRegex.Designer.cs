@@ -32,8 +32,12 @@
             this.textBoxFind = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.textBoxResultMatch = new System.Windows.Forms.TextBox();
             this.buttonMatch = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxReplace = new System.Windows.Forms.TextBox();
+            this.buttonReplace = new System.Windows.Forms.Button();
+            this.textBoxResultReplace = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxInput
@@ -72,14 +76,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Строка поиска";
             // 
-            // textBoxResult
+            // textBoxResultMatch
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(150, 70);
-            this.textBoxResult.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(461, 26);
-            this.textBoxResult.TabIndex = 4;
+            this.textBoxResultMatch.Location = new System.Drawing.Point(150, 67);
+            this.textBoxResultMatch.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxResultMatch.Name = "textBoxResultMatch";
+            this.textBoxResultMatch.ReadOnly = true;
+            this.textBoxResultMatch.Size = new System.Drawing.Size(461, 26);
+            this.textBoxResultMatch.TabIndex = 4;
             // 
             // buttonMatch
             // 
@@ -92,13 +96,55 @@
             this.buttonMatch.UseVisualStyleBackColor = true;
             this.buttonMatch.Click += new System.EventHandler(this.buttonMatch_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 105);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Строка замены";
+            // 
+            // textBoxReplace
+            // 
+            this.textBoxReplace.Location = new System.Drawing.Point(150, 102);
+            this.textBoxReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReplace.Name = "textBoxReplace";
+            this.textBoxReplace.Size = new System.Drawing.Size(461, 26);
+            this.textBoxReplace.TabIndex = 6;
+            // 
+            // buttonReplace
+            // 
+            this.buttonReplace.Location = new System.Drawing.Point(10, 135);
+            this.buttonReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReplace.Name = "buttonReplace";
+            this.buttonReplace.Size = new System.Drawing.Size(127, 26);
+            this.buttonReplace.TabIndex = 9;
+            this.buttonReplace.Text = "Замена";
+            this.buttonReplace.UseVisualStyleBackColor = true;
+            this.buttonReplace.Click += new System.EventHandler(this.buttonReplace_Click);
+            // 
+            // textBoxResultReplace
+            // 
+            this.textBoxResultReplace.Location = new System.Drawing.Point(150, 137);
+            this.textBoxResultReplace.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxResultReplace.Name = "textBoxResultReplace";
+            this.textBoxResultReplace.ReadOnly = true;
+            this.textBoxResultReplace.Size = new System.Drawing.Size(461, 26);
+            this.textBoxResultReplace.TabIndex = 8;
+            // 
             // FormRegex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 442);
+            this.Controls.Add(this.buttonReplace);
+            this.Controls.Add(this.textBoxResultReplace);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxReplace);
             this.Controls.Add(this.buttonMatch);
-            this.Controls.Add(this.textBoxResult);
+            this.Controls.Add(this.textBoxResultMatch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFind);
@@ -122,8 +168,12 @@
         private System.Windows.Forms.TextBox textBoxFind;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.TextBox textBoxResultMatch;
         private System.Windows.Forms.Button buttonMatch;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxReplace;
+        private System.Windows.Forms.Button buttonReplace;
+        private System.Windows.Forms.TextBox textBoxResultReplace;
     }
 }
 
