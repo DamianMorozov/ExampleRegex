@@ -28,127 +28,135 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxInput = new System.Windows.Forms.TextBox();
             this.textBoxFind = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxResultMatch = new System.Windows.Forms.TextBox();
             this.buttonMatch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxReplace = new System.Windows.Forms.TextBox();
             this.buttonReplace = new System.Windows.Forms.Button();
-            this.textBoxResultReplace = new System.Windows.Forms.TextBox();
+            this.richTextBoxInput = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxResult = new System.Windows.Forms.RichTextBox();
+            this.buttonCsv = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // textBoxInput
-            // 
-            this.textBoxInput.Location = new System.Drawing.Point(150, 7);
-            this.textBoxInput.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxInput.Name = "textBoxInput";
-            this.textBoxInput.Size = new System.Drawing.Size(461, 26);
-            this.textBoxInput.TabIndex = 0;
             // 
             // textBoxFind
             // 
-            this.textBoxFind.Location = new System.Drawing.Point(150, 37);
+            this.textBoxFind.Location = new System.Drawing.Point(150, 140);
             this.textBoxFind.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxFind.Name = "textBoxFind";
-            this.textBoxFind.Size = new System.Drawing.Size(461, 26);
-            this.textBoxFind.TabIndex = 1;
+            this.textBoxFind.Size = new System.Drawing.Size(1021, 26);
+            this.textBoxFind.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Location = new System.Drawing.Point(10, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Входная строка";
+            this.label1.Size = new System.Drawing.Size(1161, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Входной текст";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 40);
+            this.label2.Location = new System.Drawing.Point(10, 140);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 20);
-            this.label2.TabIndex = 3;
+            this.label2.Size = new System.Drawing.Size(130, 20);
+            this.label2.TabIndex = 2;
             this.label2.Text = "Строка поиска";
-            // 
-            // textBoxResultMatch
-            // 
-            this.textBoxResultMatch.Location = new System.Drawing.Point(150, 67);
-            this.textBoxResultMatch.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxResultMatch.Name = "textBoxResultMatch";
-            this.textBoxResultMatch.ReadOnly = true;
-            this.textBoxResultMatch.Size = new System.Drawing.Size(461, 26);
-            this.textBoxResultMatch.TabIndex = 4;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonMatch
             // 
-            this.buttonMatch.Location = new System.Drawing.Point(10, 70);
+            this.buttonMatch.Location = new System.Drawing.Point(10, 210);
             this.buttonMatch.Margin = new System.Windows.Forms.Padding(4);
             this.buttonMatch.Name = "buttonMatch";
-            this.buttonMatch.Size = new System.Drawing.Size(127, 26);
-            this.buttonMatch.TabIndex = 5;
+            this.buttonMatch.Size = new System.Drawing.Size(180, 26);
+            this.buttonMatch.TabIndex = 6;
             this.buttonMatch.Text = "Поиск";
             this.buttonMatch.UseVisualStyleBackColor = true;
             this.buttonMatch.Click += new System.EventHandler(this.buttonMatch_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 105);
+            this.label3.Location = new System.Drawing.Point(10, 175);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 20);
-            this.label3.TabIndex = 7;
+            this.label3.Size = new System.Drawing.Size(130, 20);
+            this.label3.TabIndex = 4;
             this.label3.Text = "Строка замены";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxReplace
             // 
-            this.textBoxReplace.Location = new System.Drawing.Point(150, 102);
+            this.textBoxReplace.Location = new System.Drawing.Point(150, 170);
             this.textBoxReplace.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxReplace.Name = "textBoxReplace";
-            this.textBoxReplace.Size = new System.Drawing.Size(461, 26);
-            this.textBoxReplace.TabIndex = 6;
+            this.textBoxReplace.Size = new System.Drawing.Size(1021, 26);
+            this.textBoxReplace.TabIndex = 5;
             // 
             // buttonReplace
             // 
-            this.buttonReplace.Location = new System.Drawing.Point(10, 135);
+            this.buttonReplace.Location = new System.Drawing.Point(200, 210);
             this.buttonReplace.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReplace.Name = "buttonReplace";
-            this.buttonReplace.Size = new System.Drawing.Size(127, 26);
-            this.buttonReplace.TabIndex = 9;
+            this.buttonReplace.Size = new System.Drawing.Size(180, 26);
+            this.buttonReplace.TabIndex = 7;
             this.buttonReplace.Text = "Замена";
             this.buttonReplace.UseVisualStyleBackColor = true;
             this.buttonReplace.Click += new System.EventHandler(this.buttonReplace_Click);
             // 
-            // textBoxResultReplace
+            // richTextBoxInput
             // 
-            this.textBoxResultReplace.Location = new System.Drawing.Point(150, 137);
-            this.textBoxResultReplace.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxResultReplace.Name = "textBoxResultReplace";
-            this.textBoxResultReplace.ReadOnly = true;
-            this.textBoxResultReplace.Size = new System.Drawing.Size(461, 26);
-            this.textBoxResultReplace.TabIndex = 8;
+            this.richTextBoxInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBoxInput.Location = new System.Drawing.Point(10, 35);
+            this.richTextBoxInput.Name = "richTextBoxInput";
+            this.richTextBoxInput.Size = new System.Drawing.Size(1162, 100);
+            this.richTextBoxInput.TabIndex = 1;
+            this.richTextBoxInput.Text = "";
+            // 
+            // richTextBoxResult
+            // 
+            this.richTextBoxResult.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBoxResult.Location = new System.Drawing.Point(12, 245);
+            this.richTextBoxResult.Name = "richTextBoxResult";
+            this.richTextBoxResult.ReadOnly = true;
+            this.richTextBoxResult.Size = new System.Drawing.Size(1162, 200);
+            this.richTextBoxResult.TabIndex = 8;
+            this.richTextBoxResult.Text = "";
+            // 
+            // buttonCsv
+            // 
+            this.buttonCsv.Location = new System.Drawing.Point(390, 210);
+            this.buttonCsv.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCsv.Name = "buttonCsv";
+            this.buttonCsv.Size = new System.Drawing.Size(180, 26);
+            this.buttonCsv.TabIndex = 9;
+            this.buttonCsv.Text = "Разбор csv-файла";
+            this.buttonCsv.UseVisualStyleBackColor = true;
+            this.buttonCsv.Click += new System.EventHandler(this.buttonWord_Click);
             // 
             // FormRegex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 442);
+            this.ClientSize = new System.Drawing.Size(1184, 462);
+            this.Controls.Add(this.buttonCsv);
+            this.Controls.Add(this.richTextBoxResult);
+            this.Controls.Add(this.richTextBoxInput);
             this.Controls.Add(this.buttonReplace);
-            this.Controls.Add(this.textBoxResultReplace);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxReplace);
             this.Controls.Add(this.buttonMatch);
-            this.Controls.Add(this.textBoxResultMatch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFind);
-            this.Controls.Add(this.textBoxInput);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -163,17 +171,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxInput;
         private System.Windows.Forms.TextBox textBoxFind;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxResultMatch;
         private System.Windows.Forms.Button buttonMatch;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxReplace;
         private System.Windows.Forms.Button buttonReplace;
-        private System.Windows.Forms.TextBox textBoxResultReplace;
+        private System.Windows.Forms.RichTextBox richTextBoxInput;
+        private System.Windows.Forms.RichTextBox richTextBoxResult;
+        private System.Windows.Forms.Button buttonCsv;
     }
 }
 
