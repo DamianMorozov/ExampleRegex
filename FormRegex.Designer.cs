@@ -38,6 +38,7 @@
             this.richTextBoxInput = new System.Windows.Forms.RichTextBox();
             this.richTextBoxResult = new System.Windows.Forms.RichTextBox();
             this.buttonCsv = new System.Windows.Forms.Button();
+            this.buttonReplaceMacro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxFind
@@ -142,11 +143,23 @@
             this.buttonCsv.UseVisualStyleBackColor = true;
             this.buttonCsv.Click += new System.EventHandler(this.buttonWord_Click);
             // 
+            // buttonReplaceMacro
+            // 
+            this.buttonReplaceMacro.Location = new System.Drawing.Point(580, 210);
+            this.buttonReplaceMacro.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReplaceMacro.Name = "buttonReplaceMacro";
+            this.buttonReplaceMacro.Size = new System.Drawing.Size(180, 26);
+            this.buttonReplaceMacro.TabIndex = 10;
+            this.buttonReplaceMacro.Text = "Замена макроимён";
+            this.buttonReplaceMacro.UseVisualStyleBackColor = true;
+            this.buttonReplaceMacro.Click += new System.EventHandler(this.buttonReplaceMacro_Click);
+            // 
             // FormRegex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 462);
+            this.Controls.Add(this.buttonReplaceMacro);
             this.Controls.Add(this.buttonCsv);
             this.Controls.Add(this.richTextBoxResult);
             this.Controls.Add(this.richTextBoxInput);
@@ -181,6 +194,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxInput;
         private System.Windows.Forms.RichTextBox richTextBoxResult;
         private System.Windows.Forms.Button buttonCsv;
+        private System.Windows.Forms.Button buttonReplaceMacro;
     }
 }
 

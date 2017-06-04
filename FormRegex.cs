@@ -94,5 +94,32 @@ namespace StudingRegex
                 MessageBox.Show(@"Ошибка разбора csv-файла!" + Environment.NewLine + exception.Message);
             }
         }
+
+        // Замена макроимён
+        private void buttonReplaceMacro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBoxResult.Clear();
+                string paramPattern = @"%[^\s%]+%";
+
+                foreach (var line in richTextBoxInput.Lines)
+                {
+                    var matches = Regex.Matches(line, paramPattern);
+                    if (matches.Count>0)
+                    foreach (Match match in matches)
+                    {
+                        if (match.Value == textBoxFind.Text)
+                            richTextBoxResult.Text += Regex.Replace(line, textBoxFind.Text, textBoxReplace.Text, RegexOptions.IgnoreCase) + Environment.NewLine;
+                    }
+                    else
+                        richTextBoxResult.Text += line + Environment.NewLine;
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(@"Ошибка замены!" + Environment.NewLine + exception.Message);
+            }
+        }
     }
 }
